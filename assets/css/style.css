@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --primary-color : #ff6b6b;
+    --secondary-color : #794afa;
+    --secondary-dark-color : #453c5c;
+
+    --white-color : #fff;
+    --light-bg-color : #f2f3f5;
+    --light-text-color : #7c899a;
+    --border-color : #e5e8ec;
+    --dark-color : #0a021c;
+
+    --font-small:13px;
+    --font-smaller:11px;
+
+    --percent100 : 100%;
+    --percent50 : 50%;
+
+    --fw3:300;
+    --fw5:500;
+    --fw6:600;
+    --fw7:700;
+    --fw8:800;
+
+    --trans-background-color : background-color .3s color .3s;
+    --trans-background : background-color .3s;
+    --trans-color: color .3s;
+}
+
+
+
+/*
+
+===============
+
+    reset
+
+===============
+
+*/
+
+*{
+    margin:0 ;
+    padding: 0;
+    transition: all .2s;
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--dark-color);
+    background-color: var(--white-color);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    /* -webkit-tap-highlight-color: transparent; */
+}
+
+ul{
+    list-style: none;
+}
+li{
+    list-style-type: none;
+}
+
+
+img{
+    max-width: var(--percent100);
+    vertical-align: middle;
+}
+
+strong{
+    font-weight: var(--fw8);
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+input::placeholder{
+    font: inherit;
+}
+
+h1,h2,h3,h4{
+    font-family: "Poppins";
+}
+
+h1{
+    font-size: calc(1.3em+1vw);
+    font-weight: var(--fw8);
+    line-height: 1;
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+h3{
+    font-size: 1.2em;
+    font-weight: var(--fw7);
+}
+h4{
+    font-size: 1em;
+    font-weight: var(--6);
+}
+
+/*
+
+===============
+
+    component
+
+===============
+
+*/
+
+.d-none{
+    display: none;
+    
+}
+
+.r-0{
+    right : 0 !important;
+}
+
+/*
+
+===============
+
+    Header
+
+===============
+
+*/
+.nav-link {
+    font-weight: var(--fw8);
+}
+.dropdown-item{
+    font-size: var(--font-small);
+    color: var(--light-text-color);
+    padding: .5rem 1rem;
+}
+.hamburger-icon{
+    margin: 2rem 1rem;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 3.5rem;
+    height: .5rem;
+    border-radius: .5rem;
+    background-color: var(--light-text-color);
+    margin: .6rem 0 0 .5rem;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+
+  .menu-hamburger {
+    height: 100vh;
+    width: 25rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -50rem;
+    background-color: var(--white-color);
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  .menu-hamburger a, .dropdown-btn {
+    padding: .6rem .8rem 2.5rem 1.6rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    
+  }
+  
+  .menu-hamburger a:hover, .dropdown-btn:hover {
+    color: var(--secondary-color);
+  }
+
+  .dropdown-container {
+    margin: -1.25rem 1rem 1rem ;
+    border: 1px solid var(--light-text-color);
+    border-radius: .5rem;
+    padding-left: 8px;
+  }
+  .dropdown-container a {
+    padding: 1rem;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  /* Some media queries for responsiveness */
+  @media screen and (max-height: 450px) {
+    .menu-hamburger {padding-top: 15px;}
+    .menu-hamburger a {font-size: 18px;}
+  }
