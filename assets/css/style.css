@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 :root{
-    --primary-color : #ff6b6b;
+    --primary-color : #ff3b3b;
     --secondary-color : #794afa;
     --secondary-dark-color : #453c5c;
 
@@ -129,12 +129,26 @@ h4{
 */
 
 .d-none{
-    display: none;
-    
+    display: none !important;  
+}
+.dis-flex{
+    display: flex !important;
 }
 
 .r-0{
     right : 0 !important;
+}
+
+.bTn{
+    width: 11rem;
+    height: 3.5rem;
+    background-color: var(--primary-color);
+    font-size: var(--font-small);
+    font-weight: var(--fw8);
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    cursor: pointer;
 }
 
 /*
@@ -148,6 +162,10 @@ h4{
 */
 .nav-link {
     font-weight: var(--fw8);
+    color: var(--light-text-color);
+}
+.nav-link:hover{
+    color: var(--secondary-color);
 }
 .dropdown-item{
     font-size: var(--font-small);
@@ -229,3 +247,74 @@ h4{
     .menu-hamburger {padding-top: 15px;}
     .menu-hamburger a {font-size: 18px;}
   }
+
+  /*
+
+===============
+
+    nav and tabs
+
+===============
+
+*/
+
+.logo{
+    width: 8rem;
+    height: 4rem;
+    border-radius: .5rem;
+}
+
+.nav-tabs__link{
+    font-weight: var(--fw8);
+    font-size: 1.6rem;
+    color: var(--light-text-color);
+}
+.nav-tabs__link:hover{
+    color: var(--secondary-color);
+}
+
+.like-number{
+    padding: .35rem .6rem;
+    top: .5rem !important;
+    left: 3.35rem !important;
+}
+
+.nav-tabs__price{
+    font-size: var(--font-small);
+    width: 3rem;
+    font-weight: var(--fw7);
+}
+.navs-tabs__woman{
+    min-width: 8.5rem;
+}
+
+.nav-tabs-women-menu{
+    display: none;
+    background-color: var(--light-bg-color);
+}
+
+.nav-tabs-women-menu__link{
+    font-weight: var(--fw6);
+    font-size: 1.6rem;
+    color: var(--dark-color);
+}
+
+.nav-tabs-women-menu__link--active{
+    font-weight: var(--fw8);
+    font-size: 1.8rem;
+}
+.nav-tabs-women-menu__most-wanted{
+    background-image: url(../images/products/apparel4.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 20%;
+}
+.nav-tabs-women-menu__most-wanted-text{
+    text-align: center;
+    width: 5rem;
+    font-weight: var(--fw8);
+    /* font-weight: bolder; */
+    margin-left: -6.5rem;
+    font-size: 3rem;
+    color: var(--secondary-dark-color);
+}
