@@ -320,8 +320,55 @@ h4{
     text-align: center;
     width: 5rem;
     font-weight: var(--fw8);
-    /* font-weight: bolder; */
     margin-left: -6.5rem;
     font-size: 3rem;
     color: var(--secondary-dark-color);
+}
+
+  /*
+
+===============
+
+    search box header
+
+===============
+
+*/
+.search-box-header{
+    background-color: var(--secondary-dark-color);
+    height: 10vh;
+}
+
+.input-group{
+    width: 40%;
+    height: 6vh; 
+}
+.search-box__icon{
+    z-index: 999;
+    top: 25%;
+    left: 1%;
+}
+.form-control{
+    border-top-left-radius: .75rem !important;
+    border-bottom-left-radius: .75rem !important;
+    font-size: 1.25rem !important;
+    font-family: "Poppins";
+    padding-left: 3.5rem !important;
+}
+
+.form-control:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.search-box__btn{
+    font-size: 1.25rem !important;
+    border-top-right-radius: .75rem !important;
+    border-bottom-right-radius: .75rem !important;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+.search-box__btn:hover{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
 }

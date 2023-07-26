@@ -1,218 +1,428 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Ecommerce 2</title>
 
     <!-- reset file-->
-    <link href="assets/css/reset.css" rel="stylesheet">
+    <link href="assets/css/reset.css" rel="stylesheet" />
     <!-- bootstrap file-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- style file-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- responsive file-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <div class="site" id="page">
-        
-        <!-- header-->
-        <header>
-
-             <!-- top header-->
-             <div class="mobile-menu">
-                 <div class="hamburger-icon">
-                             <div class="bar1"></div>
-                             <div class="bar2"></div>
-                             <div class="bar3"></div>
-                 </div>
-                 <div class="menu-hamburger shadow-lg">
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#clients">Clients</a>
-                    <a href="#contact">Contact</a>
-                    <button class="dropdown-btn">Dropdown 
-                    </button>
-                    <div class="dropdown-container d-none">
-                      <a href="#">Link 1</a>
-                      <a href="#">Link 2</a>
-                      <a href="#">Link 3</a>
-                    </div>
-                    <a href="#contact">Search</a>  
-                </div>
+      <!-- header-->
+      <header>
+        <!-- top header-->
+        <div class="mobile-menu">
+          <div class="hamburger-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="menu-hamburger shadow-lg">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+            <button class="dropdown-btn">Dropdown</button>
+            <div class="dropdown-container d-none">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
             </div>
-                
-            <nav class="navbar navbar-expand-lg bg-white">       
-              <div class="container justify-content-between">
-                  <!--left side-->
-                  <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <a href="#contact">Search</a>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg bg-white">
+          <div class="container justify-content-between">
+            <!--left side-->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button> -->
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                          <li class="nav-item">
-                            <a class="nav-link me-5" href="#">Blog</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link me-5" href="#">Featured Products</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Whishlist</a>
-                          </li>
-                        </ul>
-                    
-                    <!--right side-->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link me-5" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-5" href="#">Featured Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Whishlist</a>
+                </li>
+              </ul>
 
-                    <div class="box-right">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                              <a class="nav-link me-5" href="#">Sign Up</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link me-5" href="#">My Account</a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link  me-5" href="#">Order tracking</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                              <a class="nav-link dropdown-toggle  me-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                USD
-                              </a>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">USD</a></li>
-                                <li><a class="dropdown-item" href="#">EURO</a></li>
-                                <li><a class="dropdown-item" href="#">GBP</a></li>
-                                <li><a class="dropdown-item" href="#">IDR</a></li>
-                              </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  English
-                                </a>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">English</a></li>
-                                  <li><a class="dropdown-item" href="#">German</a></li>
-                                  <li><a class="dropdown-item" href="#">Spanish</a></li>
-                                  <li><a class="dropdown-item" href="#">Bahasa</a></li>
-                                </ul>
-                              </li>
-                        </ul>
-                    </div>
-                </div>
-              </div>
-            </nav>
-            
-             <!-- nav & tabs header-->
-             <!-- <div class="nav-tabs mt-5"> -->
-              <div class="container mt-5 ">
-                <div class="row position-relative">
-                  <div class="nav-tabs-women-menu wArea position-absolute justify-content-between p-5 mt-2">
-                    <ul class="ul nav-tabs-women-menu__list">
-                      <li class="nav-tabs-women-menu__item mb-3"><a href="#" class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active">DRESSES</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Tops & Tees</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Jackets & Coats</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pants & Caris</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Sweaters</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Costumes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Hoodies & SweetShirts</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Shorts</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Swimwaer</a></li>
-                    </ul>
-                    <ul class="ul nav-tabs-women-menu__list">
-                      <li class="nav-tabs-women-menu__item mb-3"><a href="#" class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active">JEWELRY</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Accessories</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Bags </a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pants & Caris</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Sweaters</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Costumes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Hoodies & SweetShirts</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                    </ul>
-                    <ul class="ul nav-tabs-women-menu__list">
-                      <li class="nav-tabs-women-menu__item mb-3"><a href="#" class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active">BEAUTY</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Accessories</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Bags </a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pants & Caris</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Sweaters</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Costumes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Hoodies & SweetShirts</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                    </ul>
-                    <ul class="ul nav-tabs-women-menu__list">
-                      <li class="nav-tabs-women-menu__item mb-3"><a href="#" class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active">TOP BRANDS</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Accessories</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Bags </a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pants & Caris</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Sweaters</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Costumes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Hoodies & SweetShirts</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                      <li class="nav-tabs-women-menu__item mb-2"><a href="#" class="nav-tabs-women-menu__link">Pajamas & Robes</a></li>
-                    </ul>
-                    <div class="nav-tabs-women-menu__most-wanted d-flex flex-column justify-content-end align-items-center">
-                      <div class="nav-tabs-women-menu__most-wanted-text d-flex mb-3">MOST WANTED!</div>
-                        <button class="bTn rounded-pill mb-5">Order Now</button>
-                    </div>
-  
-                  </div>
-                  <div class="col-6 d-flex align-items-center">
-                    <img src="assets/images/رفاه.jpg" alt="" class="img-fluid logo me-5">
-                    <ul class="nav-tabs-list d-flex align-items-center">
-                      <li class="nav-tabs__item "><a href="" class="nav-tabs__link me-5">Home</a></li>
-                      <li class="nav-tabs__item "><a href="" class="nav-tabs__link me-5">Shop</a></li>
-                      <a class="navs-tabs__woman wItem me-4">Woman<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                      </svg></a>
-                      <li class="nav-tabs__item "><a href="" class="nav-tabs__link me-5">Men</a></li>
-                      <div class="nav-tabs__item position-relative"><a href="" class="nav-tabs__link ">Sports</a>
-                        <span class="badge text-bg-danger position-absolute nav-tabs__Sport-badge">New</span>
-                      </div>
-                    </ul>
-                  </div>
-                  <div class="col-5 offset-1 col-lg-3 offset-lg-3 d-flex align-items-center">
-                    <div type="button" class="btn position-relative me-3">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
-                        <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
-                      </svg>
-                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary like-number">
-                        0
-                        <span class="visually-hidden">unread messages</span>
-                      </span>
-                    </div>
-                    <div type="button" class="btn position-relative me-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                      </svg>
-                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary like-number">
-                        0
-                        <span class="visually-hidden">unread messages</span>
-                      </span>
-                    </div>
-                    <div class="nav-tabs__price">Total $0.00</div>
-                  </div>
-                </div>
-                
-              </div>
-             <!-- </div> -->
+              <!--right side-->
 
-        </header>
-        <!-- main-->
-        <main></main>
-        <!-- footer-->
-        <footer>
-        </footer>
+              <div class="box-right">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link me-5" href="#">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-5" href="#">My Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-5" href="#">Order tracking</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle me-5"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      USD
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">USD</a></li>
+                      <li><a class="dropdown-item" href="#">EURO</a></li>
+                      <li><a class="dropdown-item" href="#">GBP</a></li>
+                      <li><a class="dropdown-item" href="#">IDR</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      English
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">English</a></li>
+                      <li><a class="dropdown-item" href="#">German</a></li>
+                      <li><a class="dropdown-item" href="#">Spanish</a></li>
+                      <li><a class="dropdown-item" href="#">Bahasa</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- nav & tabs header-->
+        <!-- <div class="nav-tabs mt-5"> -->
+        <div class="container mt-5">
+          <div class="row position-relative">
+            <div
+              class="nav-tabs-women-menu wArea position-absolute justify-content-between p-5 mt-2"
+            >
+              <ul class="ul nav-tabs-women-menu__list">
+                <li class="nav-tabs-women-menu__item mb-3">
+                  <a
+                    href="#"
+                    class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active"
+                    >DRESSES</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Tops & Tees</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Jackets & Coats</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pants & Caris</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Sweaters</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Costumes</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Hoodies & SweetShirts</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Shorts</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Swimwaer</a>
+                </li>
+              </ul>
+              <ul class="ul nav-tabs-women-menu__list">
+                <li class="nav-tabs-women-menu__item mb-3">
+                  <a
+                    href="#"
+                    class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active"
+                    >JEWELRY</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Accessories</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Bags </a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pants & Caris</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Sweaters</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Costumes</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Hoodies & SweetShirts</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+              </ul>
+              <ul class="ul nav-tabs-women-menu__list">
+                <li class="nav-tabs-women-menu__item mb-3">
+                  <a
+                    href="#"
+                    class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active"
+                    >BEAUTY</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Accessories</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Bags </a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pants & Caris</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Sweaters</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Costumes</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Hoodies & SweetShirts</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+              </ul>
+              <ul class="ul nav-tabs-women-menu__list">
+                <li class="nav-tabs-women-menu__item mb-3">
+                  <a
+                    href="#"
+                    class="nav-tabs-women-menu__link nav-tabs-women-menu__link--active"
+                    >TOP BRANDS</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Accessories</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Bags </a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pants & Caris</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Sweaters</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link">Costumes</a>
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Hoodies & SweetShirts</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+                <li class="nav-tabs-women-menu__item mb-2">
+                  <a href="#" class="nav-tabs-women-menu__link"
+                    >Pajamas & Robes</a
+                  >
+                </li>
+              </ul>
+              <div
+                class="nav-tabs-women-menu__most-wanted d-flex flex-column justify-content-end align-items-center"
+              >
+                <div class="nav-tabs-women-menu__most-wanted-text d-flex mb-3">
+                  MOST WANTED!
+                </div>
+                <button class="bTn rounded-pill mb-5">Order Now</button>
+              </div>
+            </div>
+            <div class="col-6 d-flex align-items-center">
+              <img
+                src="assets/images/رفاه.jpg"
+                alt=""
+                class="img-fluid logo me-5"
+              />
+              <ul class="nav-tabs-list d-flex align-items-center">
+                <li class="nav-tabs__item">
+                  <a href="" class="nav-tabs__link me-5">Home</a>
+                </li>
+                <li class="nav-tabs__item">
+                  <a href="" class="nav-tabs__link me-5">Shop</a>
+                </li>
+                <a class="navs-tabs__woman wItem me-4"
+                  >Woman<svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-caret-down-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+                    /></svg
+                ></a>
+                <li class="nav-tabs__item">
+                  <a href="" class="nav-tabs__link me-5">Men</a>
+                </li>
+                <div class="nav-tabs__item position-relative">
+                  <a href="" class="nav-tabs__link">Sports</a>
+                  <span
+                    class="badge text-bg-danger position-absolute nav-tabs__Sport-badge"
+                    >New</span
+                  >
+                </div>
+              </ul>
+            </div>
+            <div
+              class="col-5 offset-1 col-lg-3 offset-lg-3 d-flex align-items-center"
+            >
+              <div type="button" class="btn position-relative me-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary like-number"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <div type="button" class="btn position-relative me-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary like-number"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <div class="nav-tabs__price">Total $0.00</div>
+            </div>
+          </div>
+        </div>
+        <!-- </div> -->
+
+        <!-- search box header-->
+
+        <div class="container-fluid search-box-header mt-5  d-flex align-items-center">
+          <div class="search-box container d-flex justify-content-end">
+            <div class="input-group position-relative">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#7c899a" class="bi bi-search position-absolute search-box__icon" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg>
+              <input type="text" class="form-control" placeholder="search for products" aria-label="Recipient's username" aria-describedby="button-addon2">
+              <button class="btn search-box__btn" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- main-->
+      <main></main>
+      <!-- footer-->
+      <footer></footer>
     </div>
-    
+
     <script src="assets/script/bootstrap.bundle.min.js"></script>
     <script src="assets/script/script.js"></script>
   </body>
