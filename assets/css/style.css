@@ -143,12 +143,16 @@ h4{
     width: 11rem;
     height: 3.5rem;
     background-color: var(--primary-color);
-    font-size: var(--font-small);
+    font-size: var(--font-smaller);
     font-weight: var(--fw8);
     color: var(--white-color);
     border: none;
     outline: none;
     cursor: pointer;
+    border-radius: 2.5rem;
+}
+.bTn:hover{
+    background-color: var(--secondary-dark-color);
 }
 
 .img-cover{
@@ -302,6 +306,7 @@ h4{
     left: 0;
     right: 0;
     background-color: var(--light-bg-color);
+    z-index: 999;
 }
 
 .nav-tabs-women-menu__link{
@@ -418,12 +423,13 @@ h4{
     background-image: url("../images/menu/menu_bg3.jpg");
     background-size: cover;
     width: 80%;
-    height: 100%;
+    height: 81.25%;
     top: 0;
-    right: -78%;
+    right: -80%;
     font-size: 1.25rem;
     font-weight: var(--fw8);
     color: var(--dark-color);
+    z-index: 900;
 }
 .drop-down-hover__item{
 
@@ -438,15 +444,45 @@ h4{
 
 
 .carousel-inner{
-    height: 83%;
+    height: 100%;
 }
 
 .carousel-control-next , .carousel-control-prev ,.carousel-indicators{
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
 }
 
 .carousel-indicators{
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
+}
+
+.carousel-item__first-btn{
+    border: none;
+    border-radius: .5rem;
+    font-size: var(--font-small);
+    font-weight: var(--fw7);
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    padding: .5rem .75rem ;
+}
+.carousel-item__first-btn:hover{
+    background-color: var(--secondary-dark-color);
+}
+.carousel-item__second-btn{
+    border: none;
+}
+
+.c-caption{
+    top: 30%;
+    left: 15%;
+    z-index: 800;
+}
+.c-caption__text1{
+    font-size: 5rem;
+    color: var(--light-text-color);
+}
+.c-caption__text2{
+    font-size: 5rem;
+    font-weight: var(--fw8);
 }
 
 
