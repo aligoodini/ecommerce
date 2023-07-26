@@ -484,5 +484,8 @@ h4{
     font-size: 5rem;
     font-weight: var(--fw8);
 }
+.brand-img{
+    cursor: pointer;
+}
 
 
