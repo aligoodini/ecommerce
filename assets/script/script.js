@@ -1,24 +1,25 @@
-let $ = document ;
-let dropdownBtn =$.querySelector(".dropdown-btn"),
-    dropdownContainer = $.querySelector(".dropdown-container"),
-    hamburgerIcon = $.querySelector(".hamburger-icon"),
-    menuHamburger = $.querySelector(".menu-hamburger"),
-    WomenMenu = $.querySelector(".nav-tabs-women-menu"),
-    womenItem = $.querySelector(".navs-tabs__woman");
 
-    console.log(WomenMenu);
-    console.log(womenItem);
+let dropdownBtn = document.querySelector(".dropdown-btn"),
+    dropdownContainer = document.querySelector(".dropdown-container"),
+    hamburgerIcon = document.querySelector(".hamburger-icon"),
+    menuHamburger = document.querySelector(".menu-hamburger"),
+    wArea = document.querySelector(".wArea"),
+    wItem = document.querySelector(".wItem");
+    
 
-    dropdownBtn.addEventListener("click",()=>{
-        dropdownContainer.classList.toggle("d-none")
+    console.log(wArea);
+    console.log(wItem);
+
+    wItem.addEventListener('click' , ()=>{
+        wArea.classList.toggle("dis-flex")
     })
-    hamburgerIcon.addEventListener("click",()=>{
-        hamburgerIcon.classList.toggle("change");
-        menuHamburger.classList.toggle("r-0")
-    })
-    womenItem.addEventListener("mouseenter",()=>{
-        WomenMenu.classList.add("dis-flex");
-    })
-    womenItem.addEventListener("mouseleave",()=>{
-        WomenMenu.classList.remove("dis-flex");
-    })
+    // dropdownBtn.addEventListener("click",()=>{
+    //     dropdownContainer.classList.toggle("d-none")
+    // })
+    // hamburgerIcon.addEventListener("click",()=>{
+    //     hamburgerIcon.classList.toggle("change");
+    //     menuHamburger.classList.toggle("r-0")
+    // })
+    
+
+    

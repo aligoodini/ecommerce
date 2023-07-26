@@ -264,12 +264,13 @@ h4{
     border-radius: .5rem;
 }
 
-.nav-tabs__link{
+.nav-tabs__link , .wItem{
     font-weight: var(--fw8);
     font-size: 1.6rem;
     color: var(--light-text-color);
+    cursor: pointer;
 }
-.nav-tabs__link:hover{
+.nav-tabs__link:hover , .wItem:hover {
     color: var(--secondary-color);
 }
 .nav-tabs__Sport-badge{
@@ -293,6 +294,9 @@ h4{
 
 .nav-tabs-women-menu{
     display: none;
+    top: 4rem;
+    left: 0;
+    right: 0;
     background-color: var(--light-bg-color);
 }
 
