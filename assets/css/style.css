@@ -151,6 +151,10 @@ h4{
     cursor: pointer;
 }
 
+.img-cover{
+    background-size: cover;
+}
+
 /*
 
 ===============
@@ -325,7 +329,7 @@ h4{
     color: var(--secondary-dark-color);
 }
 
-  /*
+/*
 
 ===============
 
@@ -372,3 +376,77 @@ h4{
     background-color: var(--secondary-color);
     color: var(--white-color);
 }
+
+
+/*
+
+===============
+
+    accordion-carousel-section
+
+===============
+
+*/
+
+.list-group{
+
+}
+.btn-group{
+    padding: 0 1rem 0 1rem
+}
+.list-group-item-action{
+    font-size: 1.25rem;
+    font-weight: var(--fw8);
+    color: var(--dark-color);
+    height: 4rem;
+}
+
+.list-group-item-action:hover{
+    background-color: var(--border-color);
+}
+.list-group-item-action:focus{
+    background-color: var(--white-color);
+}
+
+
+.list-group-item__icon{
+    margin-top: -.25rem;
+}
+
+.drop-down-hover{
+    display: none;
+    background-image: url("../images/menu/menu_bg3.jpg");
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: -78%;
+    font-size: 1.25rem;
+    font-weight: var(--fw8);
+    color: var(--dark-color);
+}
+.drop-down-hover__item{
+
+}
+.drop-down-hover__item:hover{
+    color: var(--white-color);
+}
+.arrow{
+    right: 0;
+    margin-right: 1rem;
+}
+
+
+.carousel-inner{
+    height: 83%;
+}
+
+.carousel-control-next , .carousel-control-prev ,.carousel-indicators{
+    margin-bottom: 10rem;
+}
+
+.carousel-indicators{
+    margin-bottom: 15rem;
+}
+
+
