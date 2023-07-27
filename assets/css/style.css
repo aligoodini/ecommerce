@@ -134,7 +134,9 @@ h4{
 .dis-flex{
     display: flex !important;
 }
-
+.d-block{
+    display: block;
+}
 .r-0{
     right : 0 !important;
 }
@@ -578,6 +580,7 @@ h4{
     background-size: cover;
     background-position: top;
     background-color: red;
+    cursor: pointer;
 }
 .trending-products-offer-end-box-img-box__heart{
     background-color: var(--light-bg-color);
@@ -650,6 +653,7 @@ h4{
     width: 50%;
     height: 18rem;
     border-radius: .5rem;
+    cursor: pointer;
 }
 .product-img1{
     background-image: url("../images/products/shoe1.jpg");
@@ -704,3 +708,17 @@ h4{
     color: var(--light-text-color);
 }
 
+.top-2{
+    top: 12%;
+    display: none;
+}
+.top-2:hover svg{
+    fill: var(--primary-color);
+}
+.top-3{
+    top: 22%;
+    display: none;
+}
+.top-3:hover svg{
+    fill: var(--primary-color);
+}
