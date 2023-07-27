@@ -584,7 +584,7 @@ h4{
     border-radius: 50%;
     right: 5%;
     top: 3%;
-    padding: .5rem 1rem;
+    padding: .25rem .5rem;
     cursor: pointer;
     transition: all .05s;
 }
@@ -641,3 +641,66 @@ h4{
     height: 4rem;
     background-color: var(--secondary-color);
 }
+
+.product{
+
+}
+
+.product-img{
+    width: 50%;
+    height: 18rem;
+    border-radius: .5rem;
+}
+.product-img1{
+    background-image: url("../images/products/shoe1.jpg");
+}
+.product-img2{
+    background-image: url("../images/products/apparel1.jpg");
+}
+.product-img3{
+    background-image: url("../images/products/home1.jpg");
+}
+.product-img4{
+    background-image: url("../images/products/electronic3.jpg");
+}
+.product-img5{
+    background-image: url("../images/products/apparel3.jpg");
+}
+.product-img6{
+    background-image: url("../images/products/apparel2.jpg");
+}
+.product-img7{
+    background-image: url("../images/products/home2.jpg");
+}
+.product-img8{
+    background-image: url("../images/products/home3.jpg");
+}
+.product-decript{
+    margin-left: 2rem;
+}
+.product-stars{
+    margin-top: -.5rem;
+}
+
+.product-stars , .product-price {
+    margin-left: 0;
+}
+.product-price{
+    margin-top: 1rem;
+}
+.product-nums{
+    left: 110%;
+}
+.product-lprice{
+    left: 110%;
+}
+.product-sold{
+    margin-top: 2rem;
+}
+
+.product-sold , .product-freeShipping{
+    font-size: var(--font-small);
+    font-weight: var(--fw6);
+    color: var(--light-text-color);
+}
+
