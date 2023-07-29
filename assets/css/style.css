@@ -737,7 +737,8 @@ h4{
 
 
 .view-all{
-    font-size: var(--font-small);
+    font-size: 1.5rem;
+    font-weight: var(--fw8);
     right: 0;
     top: 50%;
     transition: all 0.005s;
@@ -790,4 +791,82 @@ h4{
 }
 .p-featued-item__img8{
     background-image: url("../images/products/shoe4.jpg");
+}
+
+/*
+
+===============
+
+    add-box-section
+
+===============
+
+*/
+
+
+.add-box-first-item{
+    margin-bottom: 4rem;
+    background-image: url("../images/banner/banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4% 5% 0;
+    border-radius: 1rem;
+}
+.add-box-first-item__first-text{
+    font-size: 2rem ;
+    font-weight: var(--fw8);
+    margin-bottom: 2rem;
+}
+.add-box-first-item__second-text{
+    font-size: 3rem;
+    color: var(--light-text-color);
+}
+.add-box-first-item__third-text{
+    font-size: 4rem;
+    margin-top: -2rem;
+}
+.add-box-first-item__btn{
+    margin-bottom: 3rem;
+    width: 20%;
+    height: 4rem;
+    font-size: 1.25rem;
+}
+.add-box-first-item2{
+    background-image: url("../images/banner/banner2.jpg");
+}
+.add-box-second-item{
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    height: 30rem;
+    margin-bottom: 10rem;
+    padding: 3rem ;
+}
+.add-box-second-item__left{
+    margin-left: -2rem;
+    width: 100%;
+    background-image: url("../images/banner/download.jpg");
+    background-repeat: no-repeat;
+}
+.add-box-second-item-right{
+    margin-top: -2%;
+    margin-left: -35% ;
+}
+.add-box-second-item-right__first-text{
+    font-size: 2rem ;
+    font-weight: var(--fw8);
+    margin-bottom: 1.5rem;
+}
+.add-box-second-item-right__second-text{
+    font-size: 1.5rem;
+    font-weight: var(--fw8);
+    color: var(--light-text-color);
+}
+.add-box-second-item-right__third-text{
+    display: block;
+    margin-top: 4rem ;
 }
