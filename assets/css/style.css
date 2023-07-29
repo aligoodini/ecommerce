@@ -854,7 +854,7 @@ h4{
 }
 .add-box-second-item-right{
     margin-top: -2%;
-    margin-left: -35% ;
+    margin-left: -10% ;
 }
 .add-box-second-item-right__first-text{
     font-size: 2rem ;
@@ -869,4 +869,14 @@ h4{
 .add-box-second-item-right__third-text{
     display: block;
     margin-top: 4rem ;
+}
+
+.add-box-second-item__left-img1{
+
+}
+.add-box-second-item__left-img2{
+    background-image: url("../images/banner/images.jpg");
+}
+.add-box-second-item__left-img3{
+    background-image: url("../images/banner/download2.jpg");
 }
