@@ -20,23 +20,138 @@
       <header>
         <!-- top header-->
         <div class="mobile-menu">
-          <div class="hamburger-icon">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+          <div class="mobile-menu-row d-flex justify-content-between pt-3 px-4">
+            <div class="hamburger-icon">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="d-flex align-items-center">
+              <div type="button" class="btn position-relative me-3">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-suit-heart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary like-number"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <div type="button" class="btn position-relative me-4">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-cart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"
+                  />
+                </svg>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary like-number"
+                >
+                  0
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <div class="nav-tabs__price">Total $0.00</div>
+            </div>
           </div>
           <div class="menu-hamburger shadow-lg">
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#clients">Clients</a>
-            <a href="#contact">Contact</a>
-            <button class="dropdown-btn">Dropdown</button>
-            <div class="dropdown-container d-none">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+            <div class="shape">
+              <div class="shape-logo">
+                <img src="assets/images/logo.png" alt="" class="logo"/>
+              </div>
+              <button type="button" class="close" aria-label="Close"></button>
             </div>
-            <a href="#contact">Search</a>
+            <a class="nav-link me-5" href="#">Blog</a>
+            <a class="nav-link me-5" href="#">Featured Products</a>
+            <a class="nav-link" href="#">Whishlist</a>
+            <a class="nav-link me-5" href="#">Sign Up</a>
+            <a class="nav-link me-5" href="#">My Account</a>
+            <a class="nav-link me-5" href="#">Order tracking</a>
+            <a class="dropdown-btn nav-link me-5" href="#">
+              Currency
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+            </a>
+            <div class="dropdown-container d-none">
+              <a class="dropdown-item nav-link" href="#">USD</a>
+              <a class="dropdown-item nav-link" href="#">EURO</a>
+              <a class="dropdown-item nav-link" href="#">GBP</a>
+              <a class="dropdown-item nav-link" href="#">IDR</a>
+            </div>
+            <a class="dropdown-btn nav-link me-5" href="#">
+              Language
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+            </a>
+            <div class="dropdown-container d-none">
+              <a class="dropdown-item nav-link" href="#">English</a>
+              <a class="dropdown-item nav-link" href="#">German</a>
+              <a class="dropdown-item nav-link" href="#">Spanish</a>
+              <a class="dropdown-item nav-link" href="#">Bahasa</a>        
+            </div>
+            <a class="nav-link me-5" href="#">Home</a>
+            <a class="nav-link me-5" href="#">Shop</a>
+            <a class="dropdown-btn nav-link me-5" href="#">
+              Women
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+            </a>
+            <div class="dropdown-container d-none p-3">
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Dresses</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Tops</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Jackets</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Pants</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Sweater</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Costums</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Hoodies</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">pajamas</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Shorts</a>
+              <a class="dropdown-item nav-link border my-2 rounded" href="#">Swimwaer</a>
+            </div>
+            <a class="nav-link me-5" href="#">Men</a>
+            <a class="nav-link me-5" href="#">Sports</a>
+            <div class="nav-link Adepa disabled" href="#">All Departments</div>
+            <a class="nav-link me-5" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-apple me-2  bi-apple-custom" viewBox="0 0 16 16">
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+                <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+              </svg>
+              Beauty
+            </a>
+            <a class="nav-link me-5" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-broadcast-pin me-2 list-group-item__icon" viewBox="0 0 16 16">
+                <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM6 8a2 2 0 1 1 2.5 1.937V15.5a.5.5 0 0 1-1 0V9.937A2 2 0 0 1 6 8z"/>
+              </svg>
+              Electronic
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+            </a>
+            <a class="nav-link me-5" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cloud-fog me-2 list-group-item__icon" viewBox="0 0 16 16">
+                <path d="M3 13.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm10.405-9.473a5.001 5.001 0 0 0-9.499-1.004A3.5 3.5 0 1 0 3.5 12H13a3 3 0 0 0 .405-5.973zM8.5 3a4 4 0 0 1 3.976 3.555.5.5 0 0 0 .5.445H13a2 2 0 0 1 0 4H3.5a2.5 2.5 0 1 1 .605-4.926.5.5 0 0 0 .596-.329A4.002 4.002 0 0 1 8.5 3z"/>
+              </svg>
+              Pets
+            </a>
           </div>
         </div>
 
@@ -115,11 +230,9 @@
 
         <!-- nav & tabs header-->
         <!-- <div class="nav-tabs mt-5"> -->
-        <div class="container mt-5">
+        <div class="container mt-5 nav-tabs">
           <div class="row position-relative">
-            <div
-              class="nav-tabs-women-menu wArea position-absolute justify-content-between p-5 mt-2"
-            >
+            <div class="nav-tabs-women-menu wArea position-absolute justify-content-between p-5 mt-2">
               <ul class="ul nav-tabs-women-menu__list">
                 <li class="nav-tabs-women-menu__item mb-3">
                   <a
@@ -316,7 +429,7 @@
                 <button class="bTn rounded-pill mb-5">Order Now</button>
               </div>
             </div>
-            <div class="col-6 d-flex align-items-center">
+            <div class="col-6 d-flex align-items-center ">
               <img
                 src="assets/images/logo.png"
                 alt=""
@@ -525,7 +638,7 @@
                   </div>
                   <div class="carousel-inner">
                     <div class="carousel-item active position-relative">
-                      <img src="assets/images/slider/slider1.jpg" class="d-block w-100 h-100 img-cover" alt="...">
+                      <img src="assets/images/slider/slider1.jpg" class="d-block w-100 h-100" alt="...">
                       <div class="position-absolute c-caption d-flex flex-column justify-items-start text-start">
                         <button class="bTn carousel-item__first-btn">Quick Offer</button>
                         <p class="c-caption__text1 shadow">Wooden Minimal Sofa</p>

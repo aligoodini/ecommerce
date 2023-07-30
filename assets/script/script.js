@@ -1,13 +1,16 @@
 
-let dropdownBtn = document.querySelector(".dropdown-btn"),
+let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     dropdownContainer = document.querySelector(".dropdown-container"),
     hamburgerIcon = document.querySelector(".hamburger-icon"),
+    closeBtn = document.querySelector(".close"),
     menuHamburger = document.querySelector(".menu-hamburger"),
     wArea = document.querySelector(".wArea"),
     wItem = document.querySelector(".wItem"),
     Beauty = document.querySelectorAll(".Beauty"),
     dropDownHover = document.querySelector(".drop-down-hover"),
     imgProduct = document.querySelectorAll(".trending-products-offer-end-box-img-box");
+
+    console.log(closeBtn);
 
 
 
@@ -36,13 +39,20 @@ let dropdownBtn = document.querySelector(".dropdown-btn"),
     })
 
 
-    // dropdownBtn.addEventListener("click",()=>{
-    //     dropdownContainer.classList.toggle("d-none")
-    // })
-    // hamburgerIcon.addEventListener("click",()=>{
-    //     hamburgerIcon.classList.toggle("change");
-    //     menuHamburger.classList.toggle("r-0")
-    // })
+    // mobile menu
+
+    dropdownBtns.forEach((e)=>{
+        e.addEventListener("click",()=>{
+            console.log(e.nextElementSibling );
+            e.nextElementSibling.classList.toggle("d-none")
+        })
+    })
+    hamburgerIcon.addEventListener("click",()=>{
+        menuHamburger.classList.toggle("l-0");
+    })
+    closeBtn.addEventListener("click",()=>{
+        menuHamburger.classList.toggle("l-0");
+    })
     
 
     
