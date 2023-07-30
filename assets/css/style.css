@@ -269,7 +269,7 @@ h4{
 */
 
 .logo{
-    width: 8rem;
+    width: 15rem;
     height: 4rem;
     border-radius: .5rem;
 }
@@ -374,7 +374,7 @@ h4{
     box-shadow: none;
 }
 .search-box__btn{
-    width: 15%;
+    width: 20%;
     font-size: 1.5rem !important;
     font-weight: var(--fw8);
     border-top-right-radius: .75rem !important;
@@ -444,7 +444,7 @@ h4{
     background-image: url("../images/menu/menu_bg3.jpg");
     background-size: cover;
     width: 80%;
-    height: 81.25%;
+    height: 98%;
     top: 0;
     right: -80%;
     font-size: 1.25rem;
@@ -639,6 +639,7 @@ h4{
 }
 .progress{
     margin: 1rem 0 2rem;
+    width: 80%;
 }
 .progress-bar{
     height: 4rem;
@@ -899,7 +900,6 @@ h4{
 
 
 .call-to-action{
-    margin-bottom: 10rem;
     background-color: var(--dark-color);
 }
 .call-to-action__first-text{
@@ -920,4 +920,60 @@ h4{
 }
 .call-to-action-input-group1{
     width: 100%;
+}
+
+/*
+
+===============
+
+    footer
+
+===============
+
+*/
+
+.footer-box{
+    margin-bottom: 30rem;
+
+
+
+    padding: 5rem 0;
+    background-color: var(--light-bg-color);
+}
+.footer-box__item{
+    font-size: 1.6rem ;
+    font-weight: var(--fw8);
+    color: var(--light-text-color);
+    margin-bottom: .5rem;
+}
+.footer-box__item:hover{
+    color: var(--primary-color);
+}
+.footer-box__item--bold{
+    font-size: 1.8rem;
+    font-weight: var(--fw8);
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+
+.socials{
+
+}
+.socials__item{
+    display: inline-block;
+    background-color: var(--light-bg-color);
+    padding:.75rem 1rem;
+    border-radius: 50%;
+    margin: 0 .5rem;
+    cursor: pointer;
+}
+.socials__item:hover{
+    background-color: var(--secondary-dark-color);
+}
+.develop{
+    margin: 2rem 0 7rem;
+    font-size: 4rem;
+    font-weight: var(--fw8);
+    color: var(--light-text-color);
 }
