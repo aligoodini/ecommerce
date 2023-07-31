@@ -417,6 +417,7 @@ h4{
 }
 
 .input-group{
+    margin-bottom: 1rem;
     width: 40%;
     height: 6vh; 
 }
@@ -428,7 +429,7 @@ h4{
 .form-control{
     border-top-left-radius: .75rem !important;
     border-bottom-left-radius: .75rem !important;
-    font-size: 2rem !important;
+    font-size: 1.1rem !important;
     font-weight: var(--fw8);
     font-family: "Poppins";
     padding-left: 5rem !important;
@@ -441,7 +442,7 @@ h4{
 }
 .search-box__btn{
     width: 20%;
-    font-size: 1.5rem !important;
+    font-size: .8rem !important;
     font-weight: var(--fw8);
     border-top-right-radius: .75rem !important;
     border-bottom-right-radius: .75rem !important;
@@ -474,6 +475,7 @@ h4{
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
     padding-top: 1rem;
+    padding-bottom: .08rem;
     padding-left: 1.5rem;
 }
 .list-grroup__text1{
@@ -531,6 +533,7 @@ h4{
 }
 
 .carousel-indicators{
+    display: none;
     margin-bottom: 5rem;
 }
 
@@ -585,12 +588,11 @@ h4{
     margin-bottom: 2rem;
 }
 .circle{
-    width: 3rem;
-    height: 3rem;
+    padding: .25rem 2rem;
+    margin-right: 1rem;
     background-color: var(--secondary-color);
     border-radius: 50%;
     border: none;
-    left: -3%;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
      rgba(0, 0, 0, 0.12) 0px -12px 30px,
       rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px,
@@ -604,6 +606,7 @@ h4{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     background-color: transparent;
 }
 .trending-products-offer-end-box__title{
@@ -799,7 +802,7 @@ h4{
     font-size: 1.5rem;
     font-weight: var(--fw8);
     right: 0;
-    top: 50%;
+    top: 100%;
     transition: all 0.005s;
     cursor: pointer;
 }
@@ -977,7 +980,6 @@ h4{
     margin-bottom: 5.5rem;
 }
 .call-to-action-input-group1{
-    width: 100%;
 }
 
 /*
@@ -991,12 +993,13 @@ h4{
 */
 
 .footer-box{
-    margin-bottom: 30rem;
-
-
-
+    margin-bottom: 10rem;
     padding: 5rem 0;
     background-color: var(--light-bg-color);
+}
+
+.footer-box__col{
+    align-items: center;
 }
 .footer-box__item{
     font-size: 1.6rem ;
@@ -1030,6 +1033,7 @@ h4{
     background-color: var(--secondary-dark-color);
 }
 .develop{
+    text-align: center;
     margin: 2rem 0 7rem;
     font-size: 4rem;
     font-weight: var(--fw8);

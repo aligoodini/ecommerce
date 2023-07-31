@@ -5,6 +5,15 @@
     .carousel-indicators{
       display: flex;
     }
+    .view-all{
+      top: 50%;
+    }
+    .form-control{
+      font-size: 2rem !important;
+    }
+  .search-box__btn{
+    font-size: 1.5rem !important;
+    }
   }
   @media (min-width: 768px) {
     .c-caption__text1{
@@ -13,7 +22,10 @@
     .c-caption__text2{
       font-size: 250%;
       font-weight: var(--fw8);
-  }
+    }
+    .circle{
+      left: -5%;
+    }
   }
   @media (min-width: 992px) {
     .mobile-menu{
@@ -31,7 +43,12 @@
   .carousel-item{
     height: 51rem;
   }
-
+  .circle{
+    left: -2%;
+  }
+  .footer-box__col{
+    align-items: flex-start;
+}
   
   }
   @media (min-width: 1200px) {
@@ -41,7 +58,9 @@
     .c-caption__text2{
       font-size: 300%;
       font-weight: var(--fw8);
-  }
+    }
+    
+    
   }
   @media (min-width: 1400px) {
     
