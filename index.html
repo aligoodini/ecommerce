@@ -9,6 +9,10 @@
     <link href="assets/css/reset.css" rel="stylesheet" />
     <!-- bootstrap file-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- AOS file-->
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+    <!-- Wow js file-->
+    <link rel="stylesheet" href="assets/css/wow.css">
     <!-- style file-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- responsive file-->
@@ -1071,6 +1075,7 @@
                 class="col-12 col-sm-6 col-lg-2 d-flex justify-content-center align-items"
               >
                 <img
+
                   class="brand-img"
                   src="assets/images/brands/asus.png"
                   alt=""
@@ -3754,7 +3759,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12 col-md-6">
-                <div class="add-box-first-item">
+                <div data-aos="fade-right" class="add-box-first-item">
                   <h3 class="add-box-first-item__first-text">Brutal Sale!</h3>
                   <p class="add-box-first-item__second-text">
                     Get the deal in here
@@ -3766,7 +3771,7 @@
                 </div>
               </div>
               <div class="col-12 col-md-6">
-                <div class="add-box-first-item add-box-first-item2">
+                <div data-aos="fade-left" class="add-box-first-item add-box-first-item2">
                   <h3 class="add-box-first-item__first-text">Brutal Sale!</h3>
                   <p class="add-box-first-item__second-text">
                     Get the deal in here
@@ -3780,9 +3785,9 @@
             </div>
             <div class="row">
               <div class="col-12 col-lg-6 col-xl-4">
-                <div class="add-box-second-item">
+                <div class="add-box-second-item wow animate__animated animate__fadeInLeft">
                   <div
-                    class="add-box-second-item__left add-box-second-item__left-img1"
+                    class="add-box-second-item__left add-box-second-item__left-img1 "
                   ></div>
                   <div class="add-box-second-item-right">
                     <p class="add-box-second-item-right__first-text">Beauty</p>
@@ -3816,7 +3821,7 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6 col-xl-4">
-                <div class="add-box-second-item">
+                <div class="add-box-second-item  wow animate__animated animate__fadeIn">
                   <div
                     class="add-box-second-item__left add-box-second-item__left-img2"
                   ></div>
@@ -3852,7 +3857,7 @@
                 </div>
               </div>
               <div class="col-12 col-lg-6 col-xl-4">
-                <div class="add-box-second-item">
+                <div class="add-box-second-item wow animate__animated animate__fadeInRight">
                   <div
                     class="add-box-second-item__left add-box-second-item__left-img3"
                   ></div>
@@ -4075,7 +4080,17 @@
       </footer>
     </div>
 
+    <!-- Bootstrap -->
     <script src="assets/script/bootstrap.bundle.min.js"></script>
+    <!-- aos js library -->
+    <!-- wow js -->
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+      <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      new WOW().init();
+    </script>
     <script src="assets/script/script.js"></script>
+
   </body>
 </html>

@@ -9,6 +9,10 @@
     <link href="assets/css/reset.css" rel="stylesheet" />
     <!-- bootstrap file-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- AOS file-->
+    <link href="node_modules/aos/dist/aos.css" rel="stylesheet">
+    <!-- Wow js file-->
+    <link rel="stylesheet" href="assets/css/wow.css">
     <!-- style file-->
     <link rel="stylesheet" href="assets/css/shop.css" />
     <!-- responsive file-->
@@ -1115,7 +1119,7 @@
                                   REVIEWS
                                 </button>
                               </h2>
-                              <div id="flush-collapseThree" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body">
                                     <div class="accordion-comment">
                                         <h4 class="accordion-comment__title">ALi Goodini</h4>
@@ -1390,7 +1394,7 @@
             <div class="row">
               <div class="col-12 col-md-6 col-lg-3">
                 <div class="trending-products-offer-end-box p-featued-item">
-                  <div
+                  <div data-aos="flip-left"
                     class="trending-products-offer-end-box-img-box p-featued-item__img p-featued-item__img5 position-relative"
                   >
                     <span
@@ -1539,7 +1543,7 @@
               </div>
               <div class="col-12 col-md-6 col-lg-3">
                 <div class="trending-products-offer-end-box p-featued-item">
-                  <div
+                  <div data-aos="flip-left"
                     class="trending-products-offer-end-box-img-box p-featued-item__img p-featued-item__img6 position-relative"
                   >
                     <span
@@ -1688,7 +1692,7 @@
               </div>
               <div class="col-12 col-md-6 col-lg-3">
                 <div class="trending-products-offer-end-box p-featued-item">
-                  <div
+                  <div data-aos="flip-left"
                     class="trending-products-offer-end-box-img-box p-featued-item__img p-featued-item__img7 position-relative"
                   >
                     <span
@@ -1837,7 +1841,7 @@
               </div>
               <div class="col-12 col-md-6 col-lg-3">
                 <div class="trending-products-offer-end-box p-featued-item">
-                  <div
+                  <div data-aos="flip-left"
                     class="trending-products-offer-end-box-img-box p-featued-item__img p-featued-item__img8 position-relative"
                   >
                     <span
@@ -2314,7 +2318,16 @@
       </footer>
     </div>
 
+    <!-- Bootstrap -->
     <script src="assets/script/bootstrap.bundle.min.js"></script>
+    <!-- aos js library -->
+    <!-- wow js -->
+    <script src="node_modules/wow.js/dist/wow.min.js"></script>
+      <script src="node_modules/aos/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      new WOW().init();
+    </script>
     <script src="assets/script/script.js"></script>
   </body>
 </html>

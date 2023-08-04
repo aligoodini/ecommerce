@@ -611,6 +611,7 @@ h4{
 
 .box-color{
     display: flex;
+    cursor: pointer;
 }
 .box-color__item-color1{
     background-color: var(--dark-color);
