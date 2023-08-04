@@ -540,49 +540,137 @@ h4{
 .drop-down-hover__item:hover{
     color: var(--white-color);
 }
-.arrow{
-    right: 0;
-    margin-right: 1rem;
+
+/*
+
+===============
+
+    products-detail-section
+
+===============
+
+*/
+
+.products-detail{
+    margin-top: 5rem;
+
 }
 
-.carousel-indicators{
-    display: none;
-    margin-bottom: 5rem;
+.c-img{
+    height: 50rem;
 }
 
-.carousel-item__first-btn{
-    border: none;
-    border-radius: .5rem;
-    font-size: var(--font-small);
-    font-weight: var(--fw7);
-    color: var(--white-color);
-    background-color: var(--dark-color);
-    padding: .5rem .75rem ;
+.carousel-control-prev-icon , .carousel-control-next-icon{
+    width: 4rem;
+    height: 4rem;
 }
-.carousel-item__first-btn:hover{
-    background-color: var(--secondary-dark-color);
+.discount-31{
+    bottom: 90% !important;
 }
-.carousel-item__second-btn{
-    border: none;
+.products-detail__img-container{
+    width: 100%;
+    margin-left: 0rem;
+    gap: .5rem;
+    cursor: pointer;
 }
-
-.c-caption{
-    top: 10%;
-    left: 15%;
-    z-index: 800;
+.products-detail__img1{
+    background-image: url("../images/products/shoe1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
 }
-.c-caption__text1{
-    font-size: 120%;
-    color: var(--white-color);
+.products-detail__img2{
+    background-image: url("../images/products/shoe1-1copy.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
 }
-.c-caption__text2{
-    font-size: 120%;
+.products-detail__img3{
+    background-image: url("../images/products/shoe1-3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 15rem;
+}
+.products-detail__review{
+    color: var(--dark-color);
+    margin-left: 1.5rem;
     font-weight: var(--fw8);
 }
-.brand-img{
+.products-detail__title{
+    font-weight: var(--fw8);
+}
+.products-detail__Lprice{
+    left: 15% !important;
+}
+.products-detail__color-text{
+    margin-top: 1rem;
+    color: var(--dark-color);
+    font-size: 2rem;
+    font-weight: var(--fw8);
+}
+
+.box-color{
+    display: flex;
+}
+.box-color__item-color1{
+    background-color: var(--dark-color);
+    padding: 2rem;
+    border-radius: 50%;
+}
+.box-color__item-color2{
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    border-radius: 50%;
+}
+.box-color__item-color3{
+    background-color: var(--primary-color);
+    padding: 2rem;
+    border-radius: 50%;
+}
+.box-size__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    font-weight: var(--fw8);
+    background-color: var(--light-bg-color);
+    cursor: pointer;
+}
+.box-size__item:hover{
+    background-color: var(--dark-color);
+    color: var(--light-bg-color);
+}
+.products-detail__btn{
+    width: 70% !important;
+    height: 5rem !important;
+    font-size: 2rem !important;
+}
+.products-detail-save-share__text{
+    font-size: 1.6rem;
+    font-weight: var(--fw8);
+}
+.products-detail__save , .products-detail__share{
     cursor: pointer;
 }
 
+.accordion-button{
+        font-size: 2rem;
+        font-weight: var(--fw8);
+}
+.accordion-body__item{
+    
+}
+.accordion-body__item-title{
+    width: 10rem !important;
+    margin-right: 1rem;
+    font-weight: var(--fw8);
+}
+.accordion-body-detail{
+    color: var(--dark-color);
+    font-size: 1.8rem;
+}
 /*
 
 ===============
@@ -859,7 +947,7 @@ h4{
     background-image: url("../images/products/apparel4.jpg");
 }
 .p-featued-item__img5{
-    background-image: url("../images/products/shoe1.jpg");
+    background-image: url("../images/products/shoe1-2.jpg");
 }
 .p-featued-item__img6{
     background-image: url("../images/products/shoe2.jpg");
@@ -870,7 +958,49 @@ h4{
 .p-featued-item__img8{
     background-image: url("../images/products/shoe4.jpg");
 }
-
+.accordion-comment{
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.accordion-comment__title{
+    font-weight: var(--fw8);
+    
+}
+.accordion-comment-stars{
+    margin-top: -.1rem;
+    margin-bottom: .5rem;
+}
+.accordion-comment__title-des{
+    color: var(--dark-color);
+    font-weight: var(--fw5);
+}
+.accordion-your-comment__title{
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
+.accordion-your-comment__star-text  {
+    color: var(--dark-color);
+    font-weight: var(--fw8);
+}
+.form-label{
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    font-weight: var(--fw8);
+}
+.accordion-your-comment__border:focus{
+    border: 1px solid var(--light-text-color);
+}
+.accordion-your-comment__input::placeholder{
+    font-weight: normal;
+    font-size: 1.8rem;
+}
+.accordion-your-comment__text-area{
+    resize: none;
+}
+.comment_view-all{
+    margin-top: 1rem;
+    margin-left: 85%;
+}
 /*
 
 ===============
