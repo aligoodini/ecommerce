@@ -9,8 +9,13 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     Beauty = document.querySelectorAll(".Beauty"),
     dropDownHover = document.querySelector(".drop-down-hover"),
     imgProduct = document.querySelectorAll(".trending-products-offer-end-box-img-box");
+    //shop
+    listGroupDropDown = document.querySelector(".list-group__drop-down");
+    listGroupTitleHamburgerIcon = document.querySelector(".list-group-title__hamburger-icon");
+    dropDownHover = document.querySelector(".drop-down-hover");
+    let oFalse = true;
 
-    console.log(closeBtn);
+    console.log(dropDownHover);
 
 
 
@@ -55,4 +60,16 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     })
     
 
+    // shop
+    listGroupTitleHamburgerIcon.addEventListener("click" , ()=>{
+        if(oFalse){
+            listGroupDropDown.classList.add("o-1")
+            oFalse = false;
+        }
+        else{
+            listGroupDropDown.classList.remove("o-1");
+            dropDownHover.classList.remove("dis-flex");
+            oFalse = true;
+        }
+    })
     
