@@ -27,7 +27,11 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     accordianComment = document.querySelector(".accordian-comment")
     starColor = document.querySelector(".star-color")
 
-    console.log(starColor);
+    // change image by click in shop.html
+    productsDetailImg = document.querySelectorAll(".products-detail__img")
+    carouselItems = document.querySelectorAll(".carousel-item")
+
+    console.log(carouselItems);
 
 
 
@@ -143,4 +147,20 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
                     </p>
 `
         
+    })
+
+    // change image by click in shop.html
+    productsDetailImg.forEach((e)=>{
+
+        e.addEventListener('click' , ()=>{
+            console.log(e.dataset.id);
+            let imgNum = e.dataset.id
+            console.log(imgNum);
+
+            carouselItems.forEach((carouselItem)=>{
+                carouselItem.classList.remove("active")
+            })
+
+            carouselItems[imgNum].classList.add("active")
+        })
     })
