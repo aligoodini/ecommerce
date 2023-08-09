@@ -24,8 +24,11 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     inputName = document.querySelector(".input-name")
     inputEmail = document.querySelector(".input-email")
     inputDes = document.querySelector(".input-des")
+    accordianComment = document.querySelector(".accordian-comment")
+    starColor = document.querySelector(".star-color")
 
-    console.log(inputDes);
+    console.log(starColor);
+
 
 
 
@@ -105,7 +108,6 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
             //     console.log(starE);
             // })
         }
-        else{
             e.addEventListener("click" , ()=>{
 
                 let starId = e.id;
@@ -116,13 +118,29 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
                 }
         
             })
-            starE = 500
-        }
+            
+
 
     })
 
 
     // comment submit
     formBtn.addEventListener("click" , ()=>{
-        console.log("ok");
+        console.log(inputName.value);
+        console.log(inputDes.value);
+
+        let newComment = document.createElement("div")
+        accordianComment.prepend(newComment)
+        newComment.className = "accordion-comment mt-5"
+        newComment.innerHTML =`
+        
+                    <h4 class="accordion-comment__title mb-3">${inputName.value}</h4>
+                       
+                    ${starColor.innerHTML}
+
+                    <p class="accordion-comment__title-des mt-4">
+                    ${inputDes.value}
+                    </p>
+`
+        
     })
