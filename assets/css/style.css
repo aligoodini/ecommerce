@@ -168,6 +168,43 @@ h4{
 
 ===============
 
+    scroll bar
+
+===============
+
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 2rem ;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--secondary-color); 
+    /* background: url(../images/logo.png); */
+    background-position: center;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color); 
+  }
+  
+  /* Handle  */
+  ::-webkit-scrollbar-thumb{
+    border-radius: 4rem;
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/*
+
+===============
+
     Header
 
 ===============

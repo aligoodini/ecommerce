@@ -175,6 +175,45 @@ h4{
     fill: var(--dark-color) !important;
 }
 
+
+/*
+
+===============
+
+    scroll bar
+
+===============
+
+*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 2rem ;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* background: var(--secondary-color);  */
+    background: var(--primary-color);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondary-color); 
+  }
+  
+  /* Handle  */
+  ::-webkit-scrollbar-thumb{
+    border-radius: 4rem;
+    cursor: pointer;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+/
+
 /*
 
 ===============
