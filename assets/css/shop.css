@@ -223,8 +223,11 @@ h4{
 ===============
 
 */
+.nav-item{
+    /* font-weight: bold !important; */
+}
 .nav-link {
-    font-weight: var(--fw8);
+    font-weight: bold !important;
     color: var(--light-text-color);
 }
 .nav-link:hover{
@@ -420,7 +423,7 @@ h4{
     left: 0;
     right: 0;
     background-color: var(--light-bg-color);
-    z-index: 999;
+    z-index: 1000;
 }
 
 .nav-tabs-women-menu__link{
