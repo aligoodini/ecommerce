@@ -15,7 +15,17 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     dropDownHover = document.querySelector(".drop-down-hover");
     let oFalse = true;
 
-    console.log(dropDownHover);
+    // comment stars
+    commentStars = document.querySelectorAll(".comment-star")
+    let starE = 2
+
+    // comment submit
+    formBtn = document.querySelector(".form-btn")
+    inputName = document.querySelector(".input-name")
+    inputEmail = document.querySelector(".input-email")
+    inputDes = document.querySelector(".input-des")
+
+    console.log(inputDes);
 
 
 
@@ -63,13 +73,56 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     // shop
     listGroupTitleHamburgerIcon.addEventListener("click" , ()=>{
         if(oFalse){
-            listGroupDropDown.classList.add("o-1")
+            listGroupDropDown.classList.add("d-block")
             oFalse = false;
         }
         else{
-            listGroupDropDown.classList.remove("o-1");
-            dropDownHover.classList.remove("dis-flex");
+            listGroupDropDown.classList.remove("d-block");
             oFalse = true;
         }
     })
     
+
+    // comment stars
+    commentStars.forEach((e)=>{
+
+        if(starE < 6 ){
+            // e.addEventListener("mouseenter" , ()=>{
+            //     let starId = e.id;
+            //     for (let index = 0; index <= starId ; index++) {
+            //         commentStars[index].classList.remove("c-dark")
+            //         commentStars[index].classList.add("c-yellow")
+            //     }
+    
+            // })
+            // e.addEventListener("mouseleave" , ()=>{
+            //     let starId = e.id;
+            //     for (let index = 0; index <= starId ; index++) {
+            //         commentStars[index].classList.remove("c-yellow")
+            //         commentStars[index].classList.add("c-dark")
+            //     }
+
+            //     console.log(starE);
+            // })
+        }
+        else{
+            e.addEventListener("click" , ()=>{
+
+                let starId = e.id;
+        
+                for (let index = 0; index <= starId ; index++) {
+                    commentStars[index].classList.remove("c-dark")
+                    commentStars[index].classList.add("c-yellow")
+                }
+        
+            })
+            starE = 500
+        }
+
+    })
+
+
+    // comment submit
+    formBtn.addEventListener("click" , ()=>{
+        console.log("ok");
+    })
