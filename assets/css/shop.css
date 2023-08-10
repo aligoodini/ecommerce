@@ -489,6 +489,13 @@ h4{
     border: none;
     box-shadow: none;
 }
+.input-necessary{
+    display: none;
+    /* display: block; */
+    margin-top: .5rem;
+    color: var(--primary-color);
+    font-weight: var(--fw6);
+}
 
 .form-btn{
     font-size: 1.8rem;

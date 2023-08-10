@@ -8,30 +8,30 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
     wItem = document.querySelector(".wItem"),
     Beauty = document.querySelectorAll(".Beauty"),
     dropDownHover = document.querySelector(".drop-down-hover"),
-    imgProduct = document.querySelectorAll(".trending-products-offer-end-box-img-box");
+    imgProduct = document.querySelectorAll(".trending-products-offer-end-box-img-box"),
     //shop
-    listGroupDropDown = document.querySelector(".list-group__drop-down");
-    listGroupTitleHamburgerIcon = document.querySelector(".list-group-title__hamburger-icon");
-    dropDownHover = document.querySelector(".drop-down-hover");
-    let oFalse = true;
+    listGroupDropDown = document.querySelector(".list-group__drop-down"),
+    listGroupTitleHamburgerIcon = document.querySelector(".list-group-title__hamburger-icon"),
+    // dropDownHover = document.querySelector(".drop-down-hover"),
+    oFalse = true ,
 
     // comment stars
-    commentStars = document.querySelectorAll(".comment-star")
-    let starE = 2
+    commentStars = document.querySelectorAll(".comment-star"),
+    starE = 2 ,
 
     // comment submit
-    formBtn = document.querySelector(".form-btn")
-    inputName = document.querySelector(".input-name")
-    inputEmail = document.querySelector(".input-email")
-    inputDes = document.querySelector(".input-des")
-    accordianComment = document.querySelector(".accordian-comment")
-    starColor = document.querySelector(".star-color")
+    formBtn = document.querySelector(".form-btn"),
+    inputName = document.querySelector(".input-name"),
+    inputEmail = document.querySelector(".input-email"),
+    inputDes = document.querySelector(".input-des"),
+    accordianComment = document.querySelector(".accordian-comment"),
+    starColor = document.querySelector(".star-color"),
 
     // change image by click in shop.html
-    productsDetailImg = document.querySelectorAll(".products-detail__img")
-    carouselItems = document.querySelectorAll(".carousel-item")
+    productsDetailImg = document.querySelectorAll(".products-detail__img"),
+    carouselItems = document.querySelectorAll(".carousel-item");
 
-    console.log(carouselItems);
+
 
 
 
@@ -130,22 +130,61 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
 
     // comment submit
     formBtn.addEventListener("click" , ()=>{
-        console.log(inputName.value);
-        console.log(inputDes.value);
-
-        let newComment = document.createElement("div")
-        accordianComment.prepend(newComment)
-        newComment.className = "accordion-comment mt-5"
-        newComment.innerHTML =`
         
-                    <h4 class="accordion-comment__title mb-3">${inputName.value}</h4>
-                       
-                    ${starColor.innerHTML}
+        let inputs = [inputName , inputDes , inputEmail];
+        let adad = 0 ;
 
-                    <p class="accordion-comment__title-des mt-4">
-                    ${inputDes.value}
-                    </p>
-`
+    
+        inputs.forEach((item)=>{
+
+            // for empty inputs
+            if(item.value == ""){
+                item.nextElementSibling.classList.add("d-block")
+                setTimeout(() => {
+                    item.nextElementSibling.classList.remove("d-block")
+                }, 2500) }
+                else{
+                    adad = adad+1
+                    console.log(adad);
+                }
+
+        }) 
+        
+        if(adad == 3){
+               // create element
+
+                
+               let newComment = document.createElement("div") 
+               accordianComment.prepend(newComment) 
+               newComment.className = "accordion-comment mt-5"
+               newComment.innerHTML =`
+               
+                           <h4 class="accordion-comment__title mb-3">${inputName.value}</h4>
+                              
+                           ${starColor.innerHTML}
+       
+                           <p class="accordion-comment__title-des mt-4">
+                           ${inputDes.value}
+                           </p>
+               `
+
+               // being empty after put comment
+
+                inputs.forEach((item)=>{
+                    item.value = "";
+                })
+
+                // clear stars
+
+                commentStars.forEach((e)=>{
+                    console.log(e);
+                    e.classList.remove("c-yellow")
+                    e.classList.add("c-dark")
+                })
+
+               
+        }
+         
         
     })
 
