@@ -638,6 +638,14 @@ h4{
     font-weight: var(--fw8);
     font-size: 4rem;
 }
+tbody tr{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15rem;
+}
+.th-dispaly{
+    display: none;
+}
 
 th{
     padding: 2rem !important;
@@ -753,7 +761,7 @@ td{
 }
 
 .form-control__postal-code{
-    width: 200% !important;
+    width: 100% !important;
 }
 .form-check-input{
     border: .3rem solid var(--white-color);
