@@ -33,9 +33,6 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
 
 
 
-
-
-
     wItem.addEventListener('click' , ()=>{
         wArea.classList.toggle("dis-flex")
     })
@@ -177,7 +174,6 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
                 // clear stars
 
                 commentStars.forEach((e)=>{
-                    console.log(e);
                     e.classList.remove("c-yellow")
                     e.classList.add("c-dark")
                 })
@@ -203,3 +199,5 @@ let dropdownBtns = document.querySelectorAll(".dropdown-btn"),
             carouselItems[imgNum].classList.add("active")
         })
     })
+
+
