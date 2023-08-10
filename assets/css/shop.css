@@ -193,13 +193,12 @@ h4{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    /* background: var(--secondary-color);  */
-    background: var(--primary-color);
+    background: var(--secondary-color); 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color); 
+    background: var(--primary-color); 
   }
   
   /* Handle  */
@@ -209,10 +208,10 @@ h4{
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+    background: var(--secondary-dark-color); 
   }
 
-/
+
 
 /*
 
