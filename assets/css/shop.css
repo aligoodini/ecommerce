@@ -945,11 +945,8 @@ h4{
 .product-price{
     margin-top: 1rem;
 }
-.product-nums{
-    left: 110%;
-}
 .product-lprice{
-    left: 110%;
+    margin-left: 5%;
 }
 .product-sold{
     margin-top: 2rem;
@@ -1085,8 +1082,7 @@ h4{
     resize: none;
 }
 .comment_view-all{
-    margin-top: 1rem;
-    margin-left: 85%;
+    top: 105% !important;
 }
 /*
 
