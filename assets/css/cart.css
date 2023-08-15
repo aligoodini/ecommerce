@@ -673,13 +673,16 @@ td{
     position: absolute;
     top: 10%;
     right: 4%;
+    
 }
 .td-product-des__first-text{
     font-size: 1.8rem;
     font-weight: var(--fw8);
+    font-size: 1.3rem;
 }
 .td-product-des__second-text{
     font-weight: var(--fw6);
+    font-size: 1.3rem;
 }
 
 .td-price{
