@@ -710,12 +710,12 @@ textarea {
 
  select{
     height: 4.1rem;
-    cursor: pointer;
  }
 
  select , option{
     font-size: 1.8rem !important;
     font-weight: var(--fw6) !important;
+    cursor: pointer;
  }
 
  .form-check-input{
