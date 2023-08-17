@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Ecommerce | cart</title>
+    <title>Ecommerce | Shiping Address</title>
 
     <!-- reset file-->
     <link href="assets/css/reset.css" rel="stylesheet" />
@@ -950,11 +950,65 @@
 
         <section class="table-form mt-5">
             <div class="container">
-                <h1 class="table-form__title">Shopping Cart</h1>
-                <div class="row">
-                    
+                <div class="row mt-5">                   
                     <div class="col-12 col-lg-6">
-                        
+                        <div class="shiping-form">
+                            <div class="mb-3">
+                                <h1 class="table-form__title mb-5">Shopping Address</h1>
+                                <label for="formGroupExampleInput" class="form-label position-relative">First name
+                                    <div class="red-star">*</div>
+                                </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <label for="formGroupExampleInput" class="form-label position-relative mt-5">last name
+                                    <div class="red-star">*</div>
+                                </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <label for="formGroupExampleInput" class="form-label position-relative mt-5">Email Address
+                                    <div class="red-star">*</div>
+                                </label>
+                                <input type="email" class="form-control" id="formGroupExampleInput">
+                                <!-- country -->
+                                <label for="formGroupExampleInput" class="form-label position-relative mt-5">Country
+                                    <div class="red-star">*</div>
+                                </label>
+                                <select class="form-select form-select-lg" aria-label="Small select example">
+                                  <option value="0" selected>Iran</option>
+                                  <option value="1">Turkey</option>
+                                  <option value="2">Russia</option>
+                                  <option value="3">England</option>
+                                </select>
+                                <!-- city -->
+                                <label for="formGroupExampleInput" class="form-label position-relative mt-5">City 
+                                    <div class="red-star">*</div>
+                                </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <label for="formGroupExampleInput" class="form-label position-relative mt-5">Address
+                                    <div class="red-star">*</div>
+                                </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <label for="formGroupExampleInput" class="form-label position-relative mt-5">Phone number
+                                    <div class="red-star">*</div>
+                                </label>
+                                <input type="text" class="form-control" id="formGroupExampleInput">
+                                <div class="mb-3">
+                                    <label for="formGroupExampleInput" class="form-label position-relative mt-5">order notes
+                                        <div class="red-star">*</div>
+                                    </label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Note About your order"></textarea>
+                                </div>
+                                <!-- check box -->
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                  <label class="form-check-label" for="flexCheckDefault">
+                                    Create Account
+                                  </label>
+                                </div>
+                                <!-- button -->
+                                <div class="form-container-btn mt-5">
+                                  <button class="bTn rounded-pill from-btn">Order Now</button>
+                              </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-12 col-lg-5">
                         <div class="table-form-price fs-fw">
