@@ -695,20 +695,27 @@ h4{
     display: flex;
     cursor: pointer;
 }
-.box-color__item-color1{
-    background-color: var(--dark-color);
+.box-color__item-color1,
+.box-color__item-color2,
+.box-color__item-color3{
     padding: 2rem;
     border-radius: 50%;
+    margin: .5rem;
+    cursor: pointer;
+}
+.box-color__item-color1:hover,
+.box-color__item-color2:hover,
+.box-color__item-color3:hover{
+    transform: scale(1.2);
+}
+.box-color__item-color1{
+    background-color: var(--dark-color);
 }
 .box-color__item-color2{
     background-color: var(--secondary-color);
-    padding: 2rem;
-    border-radius: 50%;
 }
 .box-color__item-color3{
     background-color: var(--primary-color);
-    padding: 2rem;
-    border-radius: 50%;
 }
 .box-size__item{
     display: flex;
